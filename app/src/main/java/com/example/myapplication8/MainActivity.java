@@ -1,4 +1,4 @@
-package com.example.myapplication7;
+package com.example.myapplication8;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         button1 = findViewById(R.id.button1);
     }
+    private int num;
 
     public void Click(View view) {
-        button1.setText("Oh, yea, I’ve been clicked!");
+        num = num + 1;
+        button1.setText("This is a click number: "+ num);
     }
 }
